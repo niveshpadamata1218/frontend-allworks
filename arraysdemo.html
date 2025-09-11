@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays in js</title>
+</head>
+<body>
+<h1>arrauys demo</h1>
+<p id="demo"></p>
+<script>
+let fruits=["banana","grape","iceappple"];
+ //document.getElementById("demo").innerHTML=fruits+"\n";
+ //for(let i=0;i<fruits.length;i++)
+ //{
+ //document.getElementById("demo").innerHTML+=fruits[i]+"\n";
+ //}
+ fruits=fruits.concat("kiwi");
+ fruits.push("mango");
+ document.getElementById("demo").innerHTML="after push an element ";
+ for(let i=0;i<fruits.length;i++)
+ {
+ document.getElementById("demo").innerHTML+=fruits[i]+"\n";
+ }
+  fruits.pop("mango");
+ document.getElementById("demo").innerHTML="after pop an element ";
+  for(let i=0;i<fruits.length;i++)
+ {
+ document.getElementById("demo").innerHTML+=fruits[i]+"\n";
+ }
+  document.getElementById("demo").innerHTML="for each loop approch by using 'in ' operator ";
+  for(let i in fruits)
+  {
+     document.getElementById("demo").innerHTML+=fruits[i]+"\n";
+  }
+   document.getElementById("demo").innerHTML="for each loop approch by using 'of ' operator ";
+  for(let i of fruits)
+  {
+     document.getElementById("demo").innerHTML+=i+"\n";
+  }
+</script>
+</body>
+</html>

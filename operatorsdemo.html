@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators demo</title>
+
+</head>
+<body>
+<h1>operators demo</h1>
+<pre id="demo"></pre>
+<script>
+let x=10;
+let y=20;
+let result=(x>y) ? "helloo":"bye";
+document.getElementById("demo").innerHTML=`
+Additon=${x+y}
+sub=${x-y}
+mul=${x*y}
+div=${x/y}
+mod=${x%y}
+sqaure=${x*x}
+
+
+//assigment operators demo
+additon assigment=${x+=2}
+sub assigment=${x-=2}
+mul assigment=${x*=2}
+div assigment=${x/=2}
+mod assignment=${x%=2}
+
+
+//relational op demo
+< demo =${x<y}
+<= demo =${x<=y}
+> demo=${x>y}
+>= demo =${x>=y}
+!= demo =${x!=y}
+== demo=${x==y}
+
+
+//logiocal operators
+logical AND =$({(x<y)&&(x===y)}
+logical OR =${(x<y)||(x===y)}
+logical NOT =${!(x<y)}
+
+// terinary operator
+condition=${result}
+`;
+</script>
+</body>
+</html>
