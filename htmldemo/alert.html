@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Alert Examples</title>
+</head>
+<body>
+  <h2>JavaScript Alert Examples</h2>
+
+  <button onclick="basicAlert()">Basic Alert</button>
+  <button onclick="variableAlert()">Alert with Variable</button>
+  <button onclick="calculationAlert()">Alert with Calculation</button>
+  <button onclick="inputAlert()">Alert with User Input</button>
+  <button onclick="multiAlert()">Multiple Alerts</button>
+  <button onclick="templateAlert()">Alert with Template Literal</button>
+
+  <script>
+    // 1. Basic Alert
+    function basicAlert() {
+      alert("Welcome to JavaScript!");
+    }
+
+    // 2. Alert with Variable
+    function variableAlert() {
+      let name = "Nivesh";
+      alert("Hello, " + name + "!");
+    }
+
+    // 3. Alert with Calculation
+    function calculationAlert() {
+      let x = 5;
+      let y = 10;
+      alert("The sum is: " + (x + y));
+    }
+
+    // 4. Alert with User Input
+    function inputAlert() {
+      let age = prompt("Enter your age:");
+      alert("You are " + age + " years old!");
+    }
+
+    // 5. Multiple Alerts
+    function multiAlert() {
+      alert("Step 1: Open browser");
+      alert("Step 2: Write code");
+      alert("Step 3: Run JavaScript");
+    }
+
+    // 6. Alert with Template Literals
+    function templateAlert() {
+      let product = "Laptop";
+      let price = 45000;
+      alert(`The price of ${product} is ₹${price}`);
+    }
+  </script>
+</body>
+</html>

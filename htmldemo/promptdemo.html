@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Prompt Examples</title>
+</head>
+<body>
+  <h2>JavaScript Prompt Examples</h2>
+  <button onclick="basicPrompt()">Basic Prompt</button>
+  <button onclick="promptWithMessage()">Prompt with Message</button>
+  <button onclick="promptAndCalculate()">Prompt and Calculate</button>
+  <button onclick="promptAndAlert()">Prompt + Alert</button>
+  <button onclick="promptAndInnerText()">Prompt + innerText</button>
+  <p id="output"></p>
+  <script>
+    // 1. Basic Prompt
+    function basicPrompt() {
+      let name = prompt("Enter your name:");
+      console.log("You entered: " + name);
+    }
+    // 2. Prompt with custom message
+    function promptWithMessage() {
+      let color = prompt("What is your favorite color?");
+      alert("Nice choice! " + color + " is beautiful.");
+    }
+
+    // 3. Prompt + Calculation
+    function promptAndCalculate() {
+      let num1 = prompt("Enter first number:");
+      let num2 = prompt("Enter second number:");
+      let sum = Number(num1) + Number(num2);
+      alert("The sum is: " + sum);
+    }
+
+    // 4. Prompt and then show with Alert
+    function promptAndAlert() {
+      let city = prompt("Which city do you live in?");
+      alert("You live in " + city);
+    }
+
+    // 5. Prompt and show inside webpage
+    function promptAndInnerText() {
+      let hobby = prompt("Enter your hobby:");
+      document.getElementById("output").innerText = "Your hobby is: " + hobby;
+    }
+  </script>
+</body>
+</html>
